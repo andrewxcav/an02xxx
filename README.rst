@@ -19,6 +19,16 @@ the xcore platform when using software defined peripherals. The basic operation 
 (address,register) or (address',register,data) and read data from / write data to an I2C peripheral, returning
 any results via the UART.
 
+To build the app, navigate to the app_* folder and type:
+  
+  cmake -B build -G"Unix Makefiles"
+  
+  cd build
+  
+  xmake
+
+
+
 ********
 Features
 ********
