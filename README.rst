@@ -1,16 +1,7 @@
-HOW TO USE THIS TEMPLATE:
-
-DO NOT FORK THIS REPO - CLICK "Use this template" ⬆️
-
-ENTER APP NOTE NUMBER AND DESCRIPTION, CLICK "Create repository"
-
-WAIT A FEW MINS - A GITHUB ACTION WILL RUN IN THE NEW REPO TO CUSTOMISE/RENAME FILES AND TIDY UP
-
-THIS MESSAGE WILL SELF DESTRUCT IN THE NEW REPO
 :orphan:
 
 ##############################
-AN0xxxx: app_note_title
+AN02XXX: Simple application interfacing between UART and I2C
 ##############################
 
 :vendor: XMOS

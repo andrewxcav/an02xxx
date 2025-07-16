@@ -1,5 +1,5 @@
 ##############################
-AN0xxxx: app_note_title
+AN02XXX: Simple application interfacing between UART and I2C
 ##############################
 
 ************
@@ -63,13 +63,13 @@ Special attention should be paid to the section on
 The application is built using the `xcommon-cmake <https://www.xmos.com/file/xcommon-cmake-documentation/?version=latest>`_
 build system, which is provided with the XTC tools and is based on `CMake <https://cmake.org/>`_.
 
-The ``an0xxxx`` software ZIP package should be downloaded and extracted to a chosen working
+The ``an02xxx`` software ZIP package should be downloaded and extracted to a chosen working
 directory.
 
 To configure the build, the following commands should be run from an XTC command prompt::
 
-    cd an0xxxx
-    cd app_an0xxxx
+    cd an02xxx
+    cd app_an02xxx
     cmake -G "Unix Makefiles" -B build
 
 All required dependencies are included in the software package. If any dependencies are missing,
@@ -80,7 +80,7 @@ The application binaries should then be built using ``xmake``::
     xmake -j -C build
 
 Binary artifacts (.xe files) will be generated under the appropriate subdirectories of the
-``app_an0xxxx/bin`` directory — one for each supported build configuration.
+``app_an02xxx/bin`` directory — one for each supported build configuration.
 
 For subsequent builds, the ``cmake`` step may be omitted.
 If ``CMakeLists.txt`` or other build files are modified, ``cmake`` will be re-run automatically
@@ -90,14 +90,14 @@ by ``xmake`` as needed.
 Running the example
 ===================
 
-From an XTC command prompt, the following command should be run from the ``an0xxxx/app_an0xxxx``
+From an XTC command prompt, the following command should be run from the ``an02xxx/app_an02xxx``
 directory::
 
-    xrun ./bin/app_an0xxxx.xe
+    xrun ./bin/app_an02xxx.xe
 
 Alternatively, the application can be programmed into flash memory for standalone execution::
 
-    xflash ./bin/app_an0xxxx.xe
+    xflash ./bin/app_an02xxx.xe
 
 
 
