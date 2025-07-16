@@ -1,29 +1,32 @@
-:orphan:
-
 ##############################
-AN02XXX: Simple application interfacing between UART and I2C
+AN0xxxx: Bridging UART and I2C
 ##############################
 
 :vendor: XMOS
 :version: 1.0.0
 :scope: Example
-:description: <BRIEF DESCRIPTION OF APP NOTE>
-:category: <[Voice | Audio | Vision | General Purpose]>
-:keywords: <LIST OF KEYWORDS HERE>
-:hardware: <LIST OF SUPPORTED BOARDS HERE>
+:description: This is a toy program showing how to connect two software defined peripherals
+:category: General Purpose
+:keywords: I2C, UART, protocol, serial, bridge, interface
+:hardware: XK-EVK-XU316
 
 *******
 Summary
 *******
 
-<OVERVIEW OF APP NOTE HERE - DISPLAYED ON APP NOTE LANDING PAGE>
+This app note creates a fictional protocol bridge between I2C and UART to demonstrate the flexibility of 
+the xcore platform when using software defined peripherals. The basic operation is that the UART will receive
+(address,register) or (address',register,data) and read data from / write data to an I2C peripheral, returning
+any results via the UART.
 
 ********
 Features
 ********
 
-* Feature 1
-* Feature 1
+* UART with compile time configurable baud rate
+* I2C master interface
+* Simple app that forwards I2C commands / data over the UART
+
 
 ************
 Known issues
@@ -41,8 +44,8 @@ Required tools
 Required libraries (dependencies)
 *********************************
 
-* lib_abc
-* lib_def
+* lib_i2c
+* lib_uart
 
 **************************
 Related application  notes
